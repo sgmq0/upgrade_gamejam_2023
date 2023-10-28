@@ -3,6 +3,10 @@
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
 /gamejam2023/Library/
+/gamejam2023/Temp/
+/gamejam2023/Build/
+/gamejam2023/Logs/
+/gamejam2023/UserSettings/
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/
@@ -70,3 +74,4 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+gamejam2023/Temp/FSTimeGet-7ca751f3c2a194d88955e9b462bffb9b
