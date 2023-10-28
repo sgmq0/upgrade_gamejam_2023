@@ -2,7 +2,7 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-/[Ll]ibrary/
+/gamejam2023/Library/
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/
