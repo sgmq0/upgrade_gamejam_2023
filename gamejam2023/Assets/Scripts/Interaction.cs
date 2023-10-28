@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Interaction : MonoBehaviour
 {
+    public string id;
+
+    [SerializeField] private GameObject noteBg;
+    [SerializeField] private GameObject noteImage;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +19,12 @@ public class Interaction : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void OnMouseDown() {
+        if (id == "note") {
+            noteImage.SetActive(true);
+            noteBg.SetActive(true);
+        }
     }
 }
