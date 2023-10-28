@@ -22,10 +22,10 @@ public class BoatSwim : MonoBehaviour
         transform.position += new Vector3(speedX, 0, 0);
         if (transform.position.x > limitXR) {
             speedX = -speed;
-            Debug.Log("SpeedX Right: " + speedX);
+            // Debug.Log("SpeedX Right: " + speedX);
         } else if (transform.position.x < limitXL) {
             speedX = speed;
-            Debug.Log("SpeedX Left: " + speedX);
+            // Debug.Log("SpeedX Left: " + speedX);
         }
     }
 }
