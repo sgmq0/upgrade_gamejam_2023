@@ -14,6 +14,12 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 
+/gamejam2023/Assets/*.log
+/gamejam2023/Assets/*.log.meta
+/gamejam2023/Assets/*.meta
+*.log
+*.meta
+
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
@@ -75,3 +81,5 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 gamejam2023/Temp/FSTimeGet-7ca751f3c2a194d88955e9b462bffb9b
+*.meta
+gamejam2023/Assets/boat.png.meta
