@@ -9,6 +9,7 @@ public class Interaction : MonoBehaviour
 
     [SerializeField] private GameObject bg;
     [SerializeField] private GameObject image;
+    [SerializeField] private GameObject passcode;
     [SerializeField] private Sprite spriteChange; 
     [SerializeField] private GameObject key;
 
@@ -40,6 +41,10 @@ public class Interaction : MonoBehaviour
                 } else if (id == "door" && invHasItem("key")) {
                     this.GetComponent<SpriteRenderer>().sprite = spriteChange;
                     id = "door2";
+                } else if (id == "safe") {
+                    image.SetActive(true);
+                    bg.SetActive(true);
+                    passcode.SetActive(true);
                 }
             }
         }
