@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Interaction : MonoBehaviour
 {
@@ -39,12 +40,18 @@ public class Interaction : MonoBehaviour
                     this.GetComponent<SpriteRenderer>().sprite = spriteChange;
                     id = "body2";
                 } else if (id == "door" && invHasItem("key")) {
+                    SceneManager.LoadScene(4);
                     this.GetComponent<SpriteRenderer>().sprite = spriteChange;
                     id = "door2";
                 } else if (id == "safe") {
                     image.SetActive(true);
                     bg.SetActive(true);
                     passcode.SetActive(true);
+                    id = "safe2";
+                } else if (id == "chest" && invHasItem("key")) {
+                    this.GetComponent<SpriteRenderer>().sprite = spriteChange;
+                    image.SetActive(true);
+                    id = "chest2";
                 }
             }
         }
