@@ -40,7 +40,7 @@ public class Interaction : MonoBehaviour
                     this.GetComponent<SpriteRenderer>().sprite = spriteChange;
                     id = "body2";
                 } else if (id == "door" && invHasItem("key")) {
-                    SceneManager.LoadScene(4);
+                    SceneManager.LoadScene(3);
                     this.GetComponent<SpriteRenderer>().sprite = spriteChange;
                     id = "door2";
                 } else if (id == "safe") {
