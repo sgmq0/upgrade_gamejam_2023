@@ -31,6 +31,11 @@ public class Inventory : MonoBehaviour
         itemList.Add(i);
         GameObject obj = itemSpaces[objsInList];
         obj.GetComponent<Image>().sprite = i.GetComponent<Item>().itemSprite;
+
+        Color newColor = obj.GetComponent<Image>().color;
+        newColor.a = 1;
+        obj.GetComponent<Image>().color = newColor;
+
         obj.GetComponent<ItemSpace>().itemName = i.GetComponent<Item>().itemName;
         Destroy(i);
         objsInList++;
