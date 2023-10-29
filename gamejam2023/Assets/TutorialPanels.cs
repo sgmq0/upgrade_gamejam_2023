@@ -1,12 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TutorialPanels : MonoBehaviour
 {
     public GameObject ArrowPanel, InteractPanel, Visibility, End;
+    // Enables Low Visibility
+    public GameObject screen, player;
     // 0 = Arrow Panel, 1 = Interact Panel, 2 = Visibility Panel, 3 = End Panel
     private int mode = 0; 
+
+    // For Waiting
+    private float time = 0f;
+    private bool waiting = false;
+    private float waitLimit = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +27,15 @@ public class TutorialPanels : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        ListenInputs();
+        if (waiting) {
+            time += Time.deltaTime;
+            if (time >= waitLimit) {
+                waiting = false;
+                time = 0f;
+            }
+        } else {
+            ListenInputs();
+        }
     }
 
     void ListenInputs() {
@@ -31,23 +47,21 @@ public class TutorialPanels : MonoBehaviour
                 ListenForInteract();
                 break;
             case 2:
-                if (Input.GetKeyDown(KeyCode.Space)) {
-                    // Deactivate Visibility Panel, Activate End Panel
-                    Visibility.SetActive(false);
-                    End.SetActive(true);
-                    mode = 3;
-                }
+                waiting = true;
+                waitLimit = 3f;
+                mode = 3;
                 break;
             case 3:
-                if (Input.GetKeyDown(KeyCode.Space)) {
-                    // Deactivate End Panel, Activate Arrow Panel
-                    End.SetActive(false);
-                    ArrowPanel.SetActive(true);
-                    mode = 0;
-                }
+                enableEnd();
+                waiting = true;
+                waitLimit = 2f;
+                mode = 4;
+                break;
+            case 4:
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 break;
             default:
-                    break;
+                break;
         }
     }
 
@@ -59,6 +73,7 @@ public class TutorialPanels : MonoBehaviour
             // Deactivate Arrow Panel, Activate Interact Panel
             ArrowPanel.SetActive(false);
             InteractPanel.SetActive(true);
+            mode = 1;
         }
     }
 
@@ -67,13 +82,8 @@ public class TutorialPanels : MonoBehaviour
             // Deactivate Interact Panel, Activate Visibility Panel
             InteractPanel.SetActive(false);
             Visibility.SetActive(true);
-        }
-    }
-
-    void wait (float seconds) {
-        float start = Time.time;
-        while (Time.time < start + seconds) {
-            // Do nothing
+            screen.transform.position = player.transform.position;
+            mode = 2;
         }
     }
 
