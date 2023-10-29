@@ -13,6 +13,6 @@ public class Vertical_Movement : MonoBehaviour
     void Update()
     {
         Vector3 horizontal = new Vector3(Input.GetAxis("Horizontal"), 0.0f, 0.0f);
-        transform position - transform.position + vertical * Time.deltaTime;
+        transform.position += horizontal * Time.deltaTime;
     }
 }

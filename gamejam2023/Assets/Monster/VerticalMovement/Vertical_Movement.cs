@@ -43,6 +43,6 @@ public class Bug_Idle : MonoBehaviour
     void Update()
     {
         Vector3 vertical = new Vector3(Input.GetAxis("Vertical"), 0.0f, 0.0f);
-        transform position - transform.position + vertical * Time.deltaTime;
+        transform.position += vertical * Time.deltaTime;
     }
 }

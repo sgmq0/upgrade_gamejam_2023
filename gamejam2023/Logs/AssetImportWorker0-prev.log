@@ -22,7 +22,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63055
+63213
 Successfully changed project path to: /Users/wjh/Documents/GitHub/upgrade_gamejam_2023/gamejam2023
 /Users/wjh/Documents/GitHub/upgrade_gamejam_2023/gamejam2023
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -54,7 +54,7 @@ Successfully changed project path to: /Users/wjh/Documents/GitHub/upgrade_gameja
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 133.34 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 120.55 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.6f1 (7da38d85baf6)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.6f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -69,75 +69,75 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.6f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.6f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2021.3.6f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56854
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56326
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.6f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.004709 seconds.
+Registered in 0.001595 seconds.
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 207.64 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 120.66 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.040 seconds
+- Completed reload, in  0.618 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1040ms)
-		BeginReloadAssembly (84ms)
+	ReloadAssembly (618ms)
+		BeginReloadAssembly (69ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (832ms)
-			LoadAssemblies (84ms)
-			RebuildTransferFunctionScriptingTraits (1ms)
-			SetupTypeCache (185ms)
+		EndReloadAssembly (447ms)
+			LoadAssemblies (68ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (100ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (82ms)
-			SetupLoadedEditorAssemblies (470ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (279ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (208ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (182ms)
-				ProcessInitializeOnLoadMethodAttributes (62ms)
+				RefreshPlugins (121ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (116ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.012956 seconds.
+Registered in 0.010511 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image /Users/wjh/Documents/GitHub/upgrade_gamejam_2023/gamejam2023/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image /Users/wjh/Documents/GitHub/upgrade_gamejam_2023/gamejam2023/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 117.40 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 118.32 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.069 seconds
+- Completed reload, in  1.073 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1070ms)
-		BeginReloadAssembly (78ms)
+	ReloadAssembly (1074ms)
+		BeginReloadAssembly (80ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (885ms)
-			LoadAssemblies (73ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (886ms)
+			LoadAssemblies (62ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (247ms)
-			ReleaseScriptCaches (1ms)
+			SetupTypeCache (238ms)
+			ReleaseScriptCaches (3ms)
 			RebuildScriptCaches (55ms)
-			SetupLoadedEditorAssemblies (458ms)
+			SetupLoadedEditorAssemblies (474ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (2ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (117ms)
+				RefreshPlugins (118ms)
 				BeforeProcessingInitializeOnLoad (95ms)
-				ProcessInitializeOnLoadAttributes (204ms)
-				ProcessInitializeOnLoadMethodAttributes (37ms)
+				ProcessInitializeOnLoadAttributes (215ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
 				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -146,13 +146,13 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launching external process: /Applications/Unity/Hub/Editor/2021.3.6f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.23 seconds
-Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler after 0.22 seconds
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4084 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 38 unused Assets / (39.6 KB). Loaded Objects now: 4540.
-Memory consumption went from 145.2 MB to 145.2 MB.
-Total: 3.967000 ms (FindLiveObjects: 0.173875 ms CreateObjectMapping: 0.077541 ms MarkObjects: 3.388667 ms  DeleteObjects: 0.325666 ms)
+Unloading 38 unused Assets / (39.7 KB). Loaded Objects now: 4540.
+Memory consumption went from 145.2 MB to 145.1 MB.
+Total: 3.826709 ms (FindLiveObjects: 0.197000 ms CreateObjectMapping: 0.078542 ms MarkObjects: 3.453208 ms  DeleteObjects: 0.097208 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -166,19 +166,146 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 207664.374318 seconds.
-  path: Assets/Monster/Bug_Idle.cs
-  artifactKey: Guid(cc7922cf2ae234fb593f2bf1d58cdf7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster/Bug_Idle.cs using Guid(cc7922cf2ae234fb593f2bf1d58cdf7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f62be5b8c7f9a3406b46cc9e0b17400') in 0.095177 seconds 
+  Time since last request: 208022.370933 seconds.
+  path: Assets/Scenes/TestScene2.unity
+  artifactKey: Guid(025e90ed5c09b4bcdacb2ea895611a04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/TestScene2.unity using Guid(025e90ed5c09b4bcdacb2ea895611a04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67d8a74ab82adb16c55776969b02f02e') in 0.007514 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.251370 seconds.
-  path: Assets/Monster/VerticalMovement/Bug_Idle - Copy.cs
-  artifactKey: Guid(cc7922cf2ae234fb593f2bf1d58cdf7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster/VerticalMovement/Bug_Idle - Copy.cs using Guid(cc7922cf2ae234fb593f2bf1d58cdf7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec317c95aa68007dfa0183be9c7bc31d') in 0.016528 seconds 
+  Time since last request: 34.583542 seconds.
+  path: Assets/Monster/HorizontalMovement/Horizontal_Wander.anim
+  artifactKey: Guid(98d3ef71797b74af1888834ca0c56b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monster/HorizontalMovement/Horizontal_Wander.anim using Guid(98d3ef71797b74af1888834ca0c56b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1623b10d54acc73792f9fd25b3a16ac3') in 0.243014 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.781368 seconds.
-  path: Assets/Monster/VerticalMovement/Bug_Idle.anim
+  Time since last request: 11.077832 seconds.
+  path: Assets/Monster/HorizontalMovement/Horiztontal_Catch.anim
+  artifactKey: Guid(3bdab65b6e7f54670a58e72041785a6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monster/HorizontalMovement/Horiztontal_Catch.anim using Guid(3bdab65b6e7f54670a58e72041785a6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4270ee3f20b038522c238a34ee862d0b') in 0.003560 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.658763 seconds.
+  path: Assets/Monster/HorizontalMovement/Vertical_Idle.anim
+  artifactKey: Guid(aa86a15f176574d7a8793f383d103a27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monster/HorizontalMovement/Vertical_Idle.anim using Guid(aa86a15f176574d7a8793f383d103a27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2a422f9d88afe9d27aab57cbb6f8229') in 0.002799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.641171 seconds.
+  path: Assets/Monster/HorizontalMovement/Horizontal_Idle.anim
+  artifactKey: Guid(aa86a15f176574d7a8793f383d103a27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monster/HorizontalMovement/Horizontal_Idle.anim using Guid(aa86a15f176574d7a8793f383d103a27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea1a5e16ed4c1dce03bed233b12f7f3f') in 0.004839 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.150725 seconds.
+  path: Assets/Monster/HorizontalMovement/Vertical_Movement.controller
+  artifactKey: Guid(b4e769bc68f0d4ea29a5dd0dc62de39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monster/HorizontalMovement/Vertical_Movement.controller using Guid(b4e769bc68f0d4ea29a5dd0dc62de39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd39f1d41266d221396ac5e1b5a59c548') in 0.056890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.955250 seconds.
+  path: Assets/Monster/HorizontalMovement/Horizontal_Movement.controller
+  artifactKey: Guid(b4e769bc68f0d4ea29a5dd0dc62de39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monster/HorizontalMovement/Horizontal_Movement.controller using Guid(b4e769bc68f0d4ea29a5dd0dc62de39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24132232a658340a2cfd249fcee4da78') in 0.017730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.834330 seconds.
+  path: Assets/Monster/HorizontalMovement/Vertical_Movement.cs
+  artifactKey: Guid(5c310ef1b71fc4ccd919f9dbf1b3657e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monster/HorizontalMovement/Vertical_Movement.cs using Guid(5c310ef1b71fc4ccd919f9dbf1b3657e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76138bfb5b58ca9789a439a30c7868fd') in 0.193790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.844937 seconds.
+  path: Assets/Monster/HorizontalMovement/Horizontal_Movement.cs
+  artifactKey: Guid(5c310ef1b71fc4ccd919f9dbf1b3657e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monster/HorizontalMovement/Horizontal_Movement.cs using Guid(5c310ef1b71fc4ccd919f9dbf1b3657e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e3c38b0ad50ebd9b9a27edd22eb92cb') in 0.002987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.159763 seconds.
+  path: Assets/Monster/VerticalMovement/Vertical_Movement.controller
+  artifactKey: Guid(d58c5267aca6f460092fda0726bcb2d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monster/VerticalMovement/Vertical_Movement.controller using Guid(d58c5267aca6f460092fda0726bcb2d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2e96ef93221523a9005d2291e5203fb') in 0.010335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.801333 seconds.
+  path: Assets/Monster/VerticalMovement/Vertical_Chase.anim
+  artifactKey: Guid(136df04ba7a3744bcabe87de13d738d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monster/VerticalMovement/Vertical_Chase.anim using Guid(136df04ba7a3744bcabe87de13d738d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87a001517e18adb21da640d3839e5798') in 0.009808 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.250628 seconds.
+  path: Assets/Monster/VerticalMovement/Vertical_Idle.anim
   artifactKey: Guid(e31c55a781cc14e42af7ecc3ddb1d5ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Monster/VerticalMovement/Bug_Idle.anim using Guid(e31c55a781cc14e42af7ecc3ddb1d5ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ebec25ccfa1b27badbbcf5986b44308') in 0.088762 seconds 
+Start importing Assets/Monster/VerticalMovement/Vertical_Idle.anim using Guid(e31c55a781cc14e42af7ecc3ddb1d5ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4765e5b91eab20717e4e00c86dbe638') in 0.001501 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.705160 seconds.
+  path: Assets/Monster/VerticalMovement/Vertical_Wander.anim
+  artifactKey: Guid(145d40abcb148428393c47f412502bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monster/VerticalMovement/Vertical_Wander.anim using Guid(145d40abcb148428393c47f412502bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bfb348e16bb308245391af42d015f53') in 0.002584 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 45.719432 seconds.
+  path: Assets/Monster/VerticalMovement/Vertical_Movement.cs
+  artifactKey: Guid(b9e48804389b44adfad2ccebf7f37aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monster/VerticalMovement/Vertical_Movement.cs using Guid(b9e48804389b44adfad2ccebf7f37aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44de0cce0c12553a78147693f1ef11bc') in 0.003363 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 514.737104 seconds.
+  path: Assets/Monster/VerticalMovement/Normal
+  artifactKey: Guid(044b41b2aba98452eb1ec58ec2e45f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monster/VerticalMovement/Normal using Guid(044b41b2aba98452eb1ec58ec2e45f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2eeb0deae7d342f794c929f3fa0835d') in 0.002718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.809786 seconds.
+  path: Assets/Monster/VerticalMovement/Normal/Chase
+  artifactKey: Guid(bc45b03c0757d4c6e9b97110d14bd165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monster/VerticalMovement/Normal/Chase using Guid(bc45b03c0757d4c6e9b97110d14bd165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f2598a9e802842f4e7cb03b3a823ca1') in 0.004850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.323855 seconds.
+  path: Assets/Monster/VerticalMovement/Chase
+  artifactKey: Guid(dd30e75c7e89547909df50a2b198feb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monster/VerticalMovement/Chase using Guid(dd30e75c7e89547909df50a2b198feb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '575d06fe0e004fa020c049fadc0ad316') in 0.001885 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.098423 seconds.
+  path: Assets/Monster/HorizontalMovement/Normal
+  artifactKey: Guid(009c884cc19ec49beb688072b2857da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monster/HorizontalMovement/Normal using Guid(009c884cc19ec49beb688072b2857da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24d4577e08871037b2dbe932eb46d19f') in 0.001584 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.684879 seconds.
+  path: Assets/Monster/HorizontalMovement/Chase
+  artifactKey: Guid(2353e977c9f7d45ea91ed17597f0ac42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monster/HorizontalMovement/Chase using Guid(2353e977c9f7d45ea91ed17597f0ac42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38182015640f6533fe98e3f12ef1b8ca') in 0.001790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 473.481542 seconds.
+  path: Assets/UI/quit.png
+  artifactKey: Guid(1087aefc8aa964ec8a4cc4fb48ba6f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/quit.png using Guid(1087aefc8aa964ec8a4cc4fb48ba6f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fc6d059edc49682123998f7c47a704c') in 0.310305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/UI/title.png
+  artifactKey: Guid(5f613660a7c8f42c18ff4026e7685cb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/title.png using Guid(5f613660a7c8f42c18ff4026e7685cb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f137a31051a3293f356b59dba66f28e') in 0.030268 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 344.540797 seconds.
+  path: Assets/Monster/VerticalMovement/BugWalk_1.png
+  artifactKey: Guid(b8b4ab8212dd645738e03c7989b118f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monster/VerticalMovement/BugWalk_1.png using Guid(b8b4ab8212dd645738e03c7989b118f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8eb9847a12cd807567d9724a050ebf6') in 0.086321 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/Monster/VerticalMovement/BugWalk_4.png
+  artifactKey: Guid(780ba71a363ef44d4a4f39d954c4b58f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Monster/VerticalMovement/BugWalk_4.png using Guid(780ba71a363ef44d4a4f39d954c4b58f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68eb24b6d1ee68e32c04c2e4935f4ba7') in 0.016861 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 233.389554 seconds.
+  path: Assets/UI/You Died!.png
+  artifactKey: Guid(e62404e7203c84acebd4a2e9930f71fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/You Died!.png using Guid(e62404e7203c84acebd4a2e9930f71fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86c4ad5628e7e9fd3447b066d84bc470') in 0.051835 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
