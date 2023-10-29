@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class AutoDestroy : MonoBehaviour
 {
-    public GameObject deathScreen;
+    public GameObject scareScreen;
+    public AudioSource deathSound;
+    public ScreenManager screenManager;
 
     void Start()
     {
-        deathScreen.SetActive(false);
     }
 
     /// <summary>
@@ -20,10 +21,12 @@ public class AutoDestroy : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Enemy") {
+            scareScreen.SetActive(true);
+            deathSound.Play();   
+            screenManager.waiting = true;   
+
             Debug.Log("You Died!");
-            // SceneManager.LoadScene(3);
-            Destroy(gameObject);
-            deathScreen.SetActive(true);
+            Destroy(gameObject);     
         }
     }
 }
