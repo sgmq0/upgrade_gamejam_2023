@@ -13,8 +13,7 @@ AnimatorState:
   m_Transitions:
   - {fileID: 2418208064500044660}
   - {fileID: -5505550007244178938}
-  m_StateMachineBehaviours:
-  - {fileID: -6531534682861220658}
+  m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -23,7 +22,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: e31c55a781cc14e42af7ecc3ddb1d5ac, type: 2}
+  m_Motion: {fileID: 7400000, guid: 20c54fb39683a0743a9d2dc33c3e8079, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -49,7 +48,11 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
+<<<<<<< Updated upstream
   m_Motion: {fileID: 7400000, guid: 42ee217b0830448bf9a1a16780a1aa5e, type: 2}
+=======
+  m_Motion: {fileID: 7400000, guid: 4f6132cf93258544a9156a33d8b5021d, type: 2}
+>>>>>>> Stashed changes
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -149,7 +152,11 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
+<<<<<<< Updated upstream
   m_Motion: {fileID: 7400000, guid: d9c32a135da6d4d73b1c5d9b827f8d9c, type: 2}
+=======
+  m_Motion: {fileID: 7400000, guid: 76f6ed9babadfa04993657cdf9100945, type: 2}
+>>>>>>> Stashed changes
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
