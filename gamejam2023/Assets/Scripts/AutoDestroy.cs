@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AutoDestroy : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class AutoDestroy : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         Debug.Log("You Died!");
+        SceneManager.LoadScene(3);
         if (other.gameObject.tag == "Enemy") Destroy(gameObject);
     }
 }
