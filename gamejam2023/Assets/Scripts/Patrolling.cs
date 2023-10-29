@@ -28,7 +28,8 @@ public class Patrolling : MonoBehaviour
         if (bloodlust) Chase();
         else {
             Move();
-            if (Vector2.Distance(transform.position, patrolPoints[currentPoint].transform.position) < 0.1f) {
+            if (Vector2.Distance(transform.position, patrolPoints[currentPoint].transform.position) == 0) {
+                // Debug.Log("New Point");
                 currentPoint = (currentPoint + 1) % patrolPoints.Length;
             }
         }
@@ -46,18 +47,30 @@ public class Patrolling : MonoBehaviour
     }
 
     void Track() {
-        Debug.Log("Tracking");
+        // Debug.Log("Tracking");
         if (Vector2.Distance(transform.position, target.position) < chaseDistance) {
             // Debug.Log("I smell blood");
             bloodlust = true;
-        } else {
+        } else if (bloodlust) {
             // Debug.Log("Must've been the wind");
+            CalculateNewWaypoint();
             bloodlust = false;
         }
     }
 
     void Chase() {
-        Debug.Log("Chasing");
+        // Debug.Log("Chasing");
         transform.position = Vector2.MoveTowards(transform.position, target.position, chaseSpeed * Time.deltaTime);
-    }    
+    }
+
+    void CalculateNewWaypoint() {
+        float closestWaypoint = 100f;
+        for (int i = 0; i < patrolPoints.Length; i++) {
+            float distance = Vector2.Distance(transform.position, patrolPoints[i].transform.position);
+            if (distance < closestWaypoint) {
+                currentPoint = i;
+                closestWaypoint = distance;
+            }
+        }
+    }
 }
