@@ -21,7 +21,7 @@ public class AutoDestroy : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy") {
             Debug.Log("You Died!");
-            SceneManager.LoadScene(3);
+            // SceneManager.LoadScene(3);
             Destroy(gameObject);
             deathScreen.SetActive(true);
         }
