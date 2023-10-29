@@ -45,6 +45,11 @@ public class Interaction : MonoBehaviour
                     image.SetActive(true);
                     bg.SetActive(true);
                     passcode.SetActive(true);
+                    id = "safe2";
+                } else if (id == "chest" && invHasItem("key")) {
+                    this.GetComponent<SpriteRenderer>().sprite = spriteChange;
+                    image.SetActive(true);
+                    id = "chest2";
                 }
             }
         }
