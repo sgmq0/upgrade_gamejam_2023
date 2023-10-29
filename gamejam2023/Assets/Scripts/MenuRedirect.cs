@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MenuRedirect : MonoBehaviour {
 
-	public void PlayGame() {
-		Debug.Log("Start!");
+	public void MainMenu() {
+		Debug.Log("Menu!");
 		SceneManager.LoadScene(0);
 	}
 }
