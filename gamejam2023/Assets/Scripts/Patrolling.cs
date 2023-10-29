@@ -13,6 +13,7 @@ public class Patrolling : MonoBehaviour
     private bool bloodlust = false;
     [SerializeField] private float chaseSpeed;    
     [SerializeField] private Transform target;
+    [SerializeField] private Transform fallback;
     [SerializeField] private float chaseDistance;
 
 
@@ -24,6 +25,9 @@ public class Patrolling : MonoBehaviour
     }
 
     void Update() {
+        // If Player dies, return to center        
+        if (target == null) target = fallback;
+
         Track();
         if (bloodlust) Chase();
         else {
