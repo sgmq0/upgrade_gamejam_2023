@@ -25,7 +25,7 @@ public class CheckPuzzle : MonoBehaviour
             panel1.SetActive(false);
             panel2.SetActive(false);
             panel3.SetActive(false);
-            safe.SetActive(false);
+            //safe.SetActive(false);
             reward.SetActive(true);
         }
     }
